@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Scraper</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            width: 300px;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #result::-webkit-scrollbar {
+            width: 10px;
+        }
+        #result::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        #result::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 5px;
+        }
+        #result::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Web Scraper</h1>
+    <button id="scrapeButton">Scrap this website</button>
+    <div id="status"></div>
+    <div id="result"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
